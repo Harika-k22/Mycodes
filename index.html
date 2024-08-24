@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MORSE</title>
+    <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+    <h1><u>WHAT IS MORSE CODE?</u></h1>
+    <img src="https://hamradioprep.com/wp-content/uploads/2021/06/morse-code-1536x915.png.webp" alt="morse tool"
+    width="400"
+    height="300"/>
+    <p>Morse code is an alphabet or code in which letters are represented by combinations of long and short light or sound signals. One of the Morse code systems was invented in the United States by American artist and inventor Samuel F.B. Morse during the 1830s for electrical telegraphy.</p>
+    
+    <h2>Morse code chart</h2>
+    <img src="https://i.pinimg.com/736x/be/5f/87/be5f870212238812c15c780d6615dda7.jpg" alt="morse chart" 
+    width="300"
+    height="300"/>
+
+    <p>Proper explanation of morse code through the video link: <a href="https://www.youtube.com/watch?v=D8tPkb98Fkk" target="_blank">CLICK TO UNDERSTAND MORSE</a></p><br>
+
+    <h2>LET'S MAKE A MORSE CODE CONVERTER</h2>
+    <div class="center">
+        <input type="text" name="code" id="textInput" placeholder="Enter text"/>
+        <div class="button-container">
+            <button name="button-letters" onclick="convertToLetter()">To Letter</button>
+            <button name="button-Morse" onclick="convertToMorse()">To Morse</button>
+        </div>
+    </div>
+
+    <br><br>
+    
+    <h2>BELOW IS A FEEDBACK FORM</h2>
+    <form>
+        <label for="fname">First name:</label><br>
+        <input type="text" id="fname" name="fname" placeholder="Enter first name" required><br><br>
+        
+        <label for="lname">Last name:</label><br>
+        <input type="text" id="lname" name="lname" placeholder="Enter last name" required><br><br>
+        
+        <label for="age">Age:</label><br>
+        <input type="number" id="age" name="age"><br><br>
+        
+        <label for="gen">Gender:</label><br>
+        <input type="radio" value="m" name="gender"/>Male
+        <input type="radio" value="f" name="gender"/>Female
+        <input type="radio" value="o" name="gender"/>Other<br><br>
+        
+        <label for="mail">Email:</label><br>
+        <input type="email" id="mail" name="mail"><br><br>
+        
+        <label for="phone">Phone number:</label><br>
+        <input type="text" id="phone" name="phone"><br><br>
+        
+        Address:<textarea></textarea><br><br>
+        
+        <label for="country">Country:</label><br>
+        <select>
+            <optgroup label="Asia">
+                <option value="India">India</option>
+                <option value="Japan">Japan</option>
+                <option value="China">China</option>
+                <option value="South Korea">South Korea</option>
+            </optgroup>
+            <optgroup label="USA">
+                <option value="Washington DC">Washington DC</option>
+                <option value="California">California</option>
+                <option value="Dallas">Dallas</option>
+            </optgroup>
+        </select><br><br>
+        
+        <label for="time">Time of submission:</label>
+        <input type="time" name="time"/><br><br>
+        
+        <label for="date">Date of submission:</label>
+        <input type="date" name="date"/><br><br>
+        
+        <label for="rev">Reviews:</label><br>
+        <input type="checkbox" name="rev[]" value="Add more Info"/>Add more Info<br>
+        <input type="checkbox" name="rev[]" value="Add more pics"/>Add more pics<br>
+        <input type="checkbox" name="rev[]" value="Add more videos"/>Add more videos<br>
+        <input type="checkbox" name="rev[]" value="Reduce pics"/>Reduce pics<br><br>
+
+        <input type="submit" id="sub" value="Submit"/>
+        <input type="reset" id="res" value="Reset"/><br><br>
+    </form>
+
+    <br><br>
+
+    <footer>
+        <p>&copy; 2024 MORSE CODE WEBSITE. ALL RIGHTS RESERVED</p>
+    </footer>
+
+    <script src="first.js"></script> <!-- Ensure this script doesn't interfere with button functions -->
+</body>
+</html>
